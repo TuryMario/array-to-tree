@@ -100,7 +100,7 @@ export function arrayToTree(
     const treeItem = lookup[itemId];
 
     if (
-      parentId === null ||
+      parentId === null || parentId === "0" ||
       parentId === undefined ||
       conf.rootParentIds[parentId]
     ) {
