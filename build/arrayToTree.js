@@ -78,7 +78,7 @@ function arrayToTree(items, config) {
             lookup[itemId] = __assign(__assign({}, item), (_c = {}, _c[conf.childrenField] = lookup[itemId][conf.childrenField], _c));
         }
         var treeItem = lookup[itemId];
-        if (parentId === null || parentId === "0" || 
+        if (parentId === null ||
             parentId === undefined ||
             conf.rootParentIds[parentId]) {
             // is a root item
